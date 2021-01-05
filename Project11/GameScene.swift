@@ -155,8 +155,7 @@ func makeSlot(at position: CGPoint, isGood: Bool) {
 	addChild(slotBase)
 	addChild(slotGlow)
 	
-	// Animation spin forrever
-	//Angles are specified in radians, not degrees. This is true in UIKit too. 360 degrees is equal to the value of 2 x Pi – that is, the mathematical value π. Therefore π radians is equal to 180 degrees.
+	// Angles are specified in radians, not degrees. This is true in UIKit too. 360 degrees is equal to the value of 2 x Pi – that is, the mathematical value π. Therefore π radians is equal to 180 degrees.
 	let spin = SKAction.rotate(byAngle: .pi, duration: 10)
 	
 	// When you create an action it will execute once. If you want it to run forever, you create another action to wrap the first using the repeatForever() method, then run that.
